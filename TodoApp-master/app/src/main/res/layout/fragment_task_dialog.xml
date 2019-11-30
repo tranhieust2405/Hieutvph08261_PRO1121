@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="TASK NAME"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/text_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input your task..."
+            android:inputType="text" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="PRIORITY"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low" />
+
+            <RadioButton
+                android:id="@+id/radio_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/radio_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="DUE DATE"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <DatePicker
+            android:id="@+id/date_picker_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/button_discard"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:text="CANCEL"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_save"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:text="OK"
+                android:textColor="@drawable/drawable_button_save"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
