@@ -48,6 +48,8 @@ public class LoginActivity extends AppCompatActivity {
                 String password = edtPassword.getText().toString().trim();
                 if (password.length() < 6 || userName.isEmpty() || password.isEmpty()) {
 
+                    Toast.makeText(LoginActivity.this, "Mật khẩu phải nhập trên 6 ký tự", Toast.LENGTH_SHORT).show();
+
                     if (userName.isEmpty())
                         edtUsername.setError(getString(R.string.notify_empty_user));
 
