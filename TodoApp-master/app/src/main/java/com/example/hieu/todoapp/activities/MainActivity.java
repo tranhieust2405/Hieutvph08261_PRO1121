@@ -1,8 +1,12 @@
 package com.example.hieu.todoapp.activities;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -100,5 +104,31 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onCancelButtonClick(int position) {
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_home, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+//            case R.id.changepass:
+//                Intent b = new Intent(HomeActivity.this, DoiMatKhauActivity.class);
+//                startActivity(b);
+//                break;
+            case R.id.dangxuat:
+                SharedPreferences preferences = getSharedPreferences("USER_FILE", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.clear();
+                editor.commit();
+                Intent c = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(c);
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

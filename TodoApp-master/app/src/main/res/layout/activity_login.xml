@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgr"
     tools:context=".activities.LoginActivity">
 
     <!-- HomeActivity progress -->
@@ -32,11 +33,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <ImageView
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:src="@drawable/logo"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/logo" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -87,7 +89,6 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:onClick="Login"
                     android:id="@+id/btnlogin"
                     style="?android:textAppearanceSmall"
                     android:layout_width="0dp"
@@ -95,7 +96,9 @@
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
                     android:text="Sigin"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_buttion"
+                    android:textColor="#FFFFFF"/>
 
                 <Button
                     android:onClick="Singup"
@@ -106,7 +109,9 @@
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
                     android:text="Signup"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_buttion"
+                    android:textColor="#FFFFFF"/>
 
             </LinearLayout>
 

@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgr"
     tools:context=".activities.SignupActivity">
 
     <!-- HomeActivity progress -->
@@ -95,7 +96,7 @@
 
             <Button
                 android:textAllCaps="false"
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnSignUp"
 
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
@@ -103,7 +104,8 @@
                 android:layout_marginTop="16dp"
                 android:text="Signup"
                 android:textStyle="bold"
-                android:onClick="Signup"/>
+                android:background="@drawable/custom_buttion"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
     </ScrollView>

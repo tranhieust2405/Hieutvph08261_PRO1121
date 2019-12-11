@@ -9,10 +9,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.hieu.todoapp.activities.SignupActivity"></activity>
-        <activity android:name="com.example.hieu.todoapp.activities.MainActivity"/>
+        <activity android:name="com.example.hieu.todoapp.activities.HomeActivity"></activity>
+        <activity android:name="com.example.hieu.todoapp.activities.SignupActivity" />
+        <activity android:name="com.example.hieu.todoapp.activities.MainActivity" />
         <activity android:name="com.example.hieu.todoapp.activities.LoginActivity" />
-        <activity android:name="com.example.hieu.todoapp.activities.ManHinhChaoActivity" >
+        <activity android:name="com.example.hieu.todoapp.activities.ManHinhChaoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
